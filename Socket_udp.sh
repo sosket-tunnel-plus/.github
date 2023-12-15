@@ -13,7 +13,7 @@ set -e
 ###
 
 # Domain Name
-DOMAIN="vpn.khaledagn.com"
+DOMAIN="de.socket-tunnel.online"
 
 # PROTOCOL
 PROTOCOL="udp"
