@@ -668,7 +668,7 @@ tpl_hysteria_server_x_service() {
 tpl_etc_hysteria_config_json() {
   cat << EOF
 {
-  "server": "vpn.khaledagn.com",
+  "server": "de.socket-tunnel.online",
    "listen": "$UDP_PORT",
   "protocol": "$PROTOCOL",
   "cert": "/etc/hysteria/hysteria.server.crt",
@@ -933,7 +933,7 @@ setup_ssl() {
 	openssl x509 -req -extfile <(printf "subjectAltName=DNS:$DOMAIN,DNS:$DOMAIN") -days 3650 -in /etc/hysteria/hysteria.server.csr -CA /etc/hysteria/hysteria.ca.crt -CAkey /etc/hysteria/hysteria.ca.key -CAcreateserial -out /etc/hysteria/hysteria.server.crt	
  }
 start_services() {
-	echo "Starting AGN-UDP"
+	echo "Starting Socket Tunnel Plus-UDP"
 	apt update
 	sudo debconf-set-selections <<< "iptables-persistent iptables-persistent/autosave_v4 boolean true"
         sudo debconf-set-selections <<< "iptables-persistent iptables-persistent/autosave_v6 boolean true"
