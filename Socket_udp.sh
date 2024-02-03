@@ -19,7 +19,7 @@ DOMAIN="de.socket-tunnel.online"
 PROTOCOL="udp"
 
 # UDP PORT
-UDP_PORT=":36712"
+UDP_PORT=":1-65000"
 
 # OBFS
 OBFS="test"
